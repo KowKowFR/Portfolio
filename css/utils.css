@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.light-theme {
+    --clr-bg: #fcfcfc;
+    --clr-bg-alt: #fff;
+    --clr-fg: #555;
+    --clr-fg-alt: #444;
+    --clr-primary: #2978b5;
+    --shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+}
+
+.dark-theme {
+    --clr-bg: #23283e;
+    --clr-bg-alt: #2a2f4c;
+    --clr-fg: #bdbddd;
+    --clr-fg-alt: #cdcdff;
+    --clr-primary: #90a0d9;
+    --shadow: rgba(0,0,0,0.16) 0px 10px 36px 0px,rgba(0,0,0,0.06) 0px 0px 0px 1px;
+}
+
+.material-symbols-outlined {
+    transition: opacity 0.3s ease-in-out;
+}
+  
+.icon-fade-out {
+    opacity: 0;
+}
+
+#theme-icon {
+    cursor: pointer;
+    padding-top: 0.2em;
+    color: var(--clr-primary);
+} 
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--clr-fg-alt);
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-fg-alt);
+    font-weight: bold;
+}
+
+.change__color {
+    color: var(--clr-primary);
+}
+
+
+.modal {
+    display: none; /* Cachez le modal par défaut */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    
+}
+  
+.modal-content {
+    background-color: var(--clr-bg-alt);
+    margin: 10% auto;
+    padding: 20px;
+    width: 60%;
+    border-radius: 0.5em;
+}
+  
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal__img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5em;
+}
+
+.modal__title {
+    margin: 0.5em 0;
+    color: var(--clr-primary)
+}
+
+.modal__text {
+    color: var(--clr-fg);
+    text-align: justify;
+    margin-bottom: 2em;
+}
+
+.modal__link {
+    color: var(--clr-primary);
+    font-weight: bold;
+    text-decoration: none;
+    background-color: var(--clr-bg);
+    margin-right: 1em;
+    padding: 0.5em 1em;
+    box-shadow: var(--shadow);
+    border-radius: 0.5em;
+}
+
+.modal__link:hover {
+    color: var(--clr-bg);
+    background-color: var(--clr-primary);
+    transition: color 0.3s;
+}
+
+  
+.close:hover {
+    color: #000;
+}

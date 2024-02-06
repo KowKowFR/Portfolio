@@ -1,0 +1,215 @@
+
+body {
+    background-color: var(--clr-bg);
+    font-family: "Poppins", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 960px;
+    background-color: var(--clr-bg);
+    height: 100vh;
+}
+
+
+
+header {
+    display: flex;
+    max-width: 960px;
+    width: 95%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 1em;
+    height: 6em;
+}
+
+header h1 {
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    color: var(--clr-primary);
+    text-transform: uppercase;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+header ul li {
+    color: var(--clr-fg);
+    margin: 0 0.8rem;
+}
+
+header ul li a {
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--clr-fg);
+}
+
+
+.profil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 3em 8em 0;
+
+}
+
+.profil__title {
+    font-size: 2em;
+}
+
+.profil__description {
+    margin-top: 2em;
+    text-align: justify;
+    color: var(--clr-fg);
+}
+
+.profil__link {
+    display: flex;
+    flex-direction: row;
+
+    margin: 3em 0;
+}
+
+.link__item:hover {
+    transition: transform 0.3s;
+    color: var(--clr-primary);
+
+}
+
+.link__item {
+    margin: 0 1em;
+    font-size: 1.3em;
+}
+
+
+.skills {
+    display: flex;
+    flex-direction: column;;
+}
+
+.section__title {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    color: var(--clr-primary);
+}
+
+.skills__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 4em;
+}
+
+.skills__item {
+    display: flex;
+    flex: 1;
+    margin: 0 1em;
+    flex-direction: column;
+    padding-bottom: 1em;
+
+    background-color: var(--clr-bg-alt);
+    box-shadow: var(--shadow);
+}
+
+.skills__item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.skills__subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0.5em 0;
+    padding: 0;
+}
+
+.skills__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.skills_item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.2em 1em;;
+}
+
+.skills_text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 10px;
+    color: var(--clr-fg-alt);
+}
+
+.progress-bar {
+    background-color: var(--clr-fg-alt);
+    border-radius: 5px;
+    height: 100%;
+    text-align: right;
+    line-height: 10px;
+    padding: 2px;
+    color: white;
+}
+
+.progress {
+    background-color: var(--clr-primary);
+    border-radius: 5px;
+    padding: 3px;
+}
+
+
+.certificates__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3em 6em;
+}
+  
+.certificates__item {
+    flex-basis: calc(33% - 20px); /* Répartit les certifications sur 4 colonnes avec un espacement de 20px entre elles */
+    margin-bottom: 20px; /* Espacement entre les lignes de certifications */
+    text-align: center;
+    cursor: pointer;
+
+    border-radius: 0.5em;
+
+    background-color: var(--clr-bg-alt);
+    box-shadow: var(--shadow);
+}
+ 
+.certificates__item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+.certificates__item img {
+    width: 100%; /* L'image occupe toute la largeur de l'élément .certification */
+    max-height: 50px; /* Vous pouvez ajuster la hauteur maximale selon vos besoins */
+    object-fit:cover; /* Ajuste la taille de l'image sans la déformer */
+    border-radius:  0.5em 0.5em 0 0;
+}
+  
+.certificates__item p {
+    margin: 5px 0 10px;
+    color: var(--clr-fg-alt);
+}

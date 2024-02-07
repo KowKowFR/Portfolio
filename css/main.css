@@ -28,7 +28,7 @@ header {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    padding-top: 1em;
+    padding-top: 1.9em;
     height: 6em;
 }
 
@@ -54,6 +54,10 @@ header ul li a {
     font-weight: 500;
     text-decoration: none;
     color: var(--clr-fg);
+}
+
+.nav__item__selected {
+    color: var(--clr-primary);
 }
 
 
@@ -212,4 +216,106 @@ header ul li a {
 .certificates__item p {
     margin: 5px 0 10px;
     color: var(--clr-fg-alt);
+}
+
+
+
+
+.projets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+.projets__category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.button__list {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+.projets__button {
+
+    margin: 0 1em;
+    padding: 0.8em 1em;
+    border-radius: 0.5em;
+    background-color: var(--clr-bg-alt);
+    box-shadow: var(--shadow);
+    color: var(--clr-fg);
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+}
+
+.projets__button:hover {
+    color: var(--clr-bg);
+    background-color: var(--clr-primary);
+    transition: color 0.3s;
+}
+
+.projets__search {
+    padding: 0.8em 1em;
+    font-size: 0.8em;
+    width: 200px;
+    text-align: center;
+    border-radius: 0.5em;
+    border: none;
+    background-color: var(--clr-bg-alt);
+    box-shadow: var(--shadow);
+    color: var(--clr-fg);
+}
+
+.projets__search::placeholder {
+    color: var(--clr-fg-alt);
+}
+
+.projets__search:focus {
+    outline: none;
+}
+
+.projets__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Alignement au début */
+    margin: 3em 8em;
+    width: 85%;
+}
+
+.projets__container div {
+    flex-basis: calc(33% - 20px); /* Base pour 3 éléments par ligne */
+    margin-left: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+
+    border-radius: 0.5em;
+    background-color: var(--clr-bg-alt);
+    box-shadow: var(--shadow);
+    width: 100%;
+    max-width: calc(33% - 20px); /* Maximum width to prevent stretching on single items */
+}
+
+.projets__container div:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.projets__item__title {
+    margin: 5px 0 10px;
+    color: var(--clr-fg-alt);
+}
+
+.projets__item__img {
+    width: 100%; /* L'image occupe toute la largeur de l'élément .certification */
+    max-height: 50px; /* Vous pouvez ajuster la hauteur maximale selon vos besoins */
+    object-fit:cover; /* Ajuste la taille de l'image sans la déformer */
+    border-radius:  0.5em 0.5em 0 0;
 }

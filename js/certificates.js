@@ -58,6 +58,16 @@ const certificationsData = [
     link_diplome: "https://openclassrooms.com/fr/courses/1946106-securisez-votre-reseau-grace-aux-vpn-et-firewall",
   },
 
+  {
+    imgSrc: "img/Certification Linux.png",
+    altText: "Administration Linux",
+    title: "Administration Linux",
+    details: "Et si vous avez déjà utilisé Linux pour votre poste de travail, c’est super, mais maintenant vous allez pouvoir passer à l’étape supérieure… Dans ce cours, vous allez apprendre les bases de l’administration d’un système Linux, c’est-à-dire apprendre à l'utiliser pour un serveur.",
+    link_certif: "https://openclassrooms.com/fr/courses/7274161-administrez-un-systeme-linux",
+    link_diplome: "https://openclassrooms.com/fr/courses/7274161-administrez-un-systeme-linux",
+  },
+    
+
 ];
 
 // Parcourez le tableau et créez des éléments HTML pour chaque certification

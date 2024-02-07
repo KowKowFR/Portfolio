@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="light-theme">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Portfolio | CT.</title>
+
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+    <body id="content" class="light-theme">
+
+        <div class="wrapper center">
+            <header>
+                <h1 class="header__title">CT.</h1>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html">Profil</a></li>
+                    <li class="nav__item"><a href="projets.html" class="nav__item__selected">Projets</a></li>
+                    <li class="nav__item"><a href="">Veille Technologique</a></li>
+                    <li class="nav__item"><span class="material-symbols-outlined" id="theme-icon">light_mode</span></li>
+                </ul>
+            </header>
+
+            <section id="profil" class="profil">
+
+                <h2 class="profil__title">Mes différents <span class="change__color">Projets Informatiques</span></h2>
+                <p class="profil__description">Vous pouvez retrouver l'ensemble de mes projets personnels sur mon profil GitHub. Les projets de type E4 et E5 sont exclusivement destinés à un usage scolaire et ne sont donc pas disponibles sur cette plateforme.</p>
+
+            </section>
+
+            <section id="projets" class="projets">
+
+                <div class="projets__category">
+                    <div class="button__list">
+                        <button class="projets__button" id="button__all">Tous les projets</button>
+                        <button class="projets__button" id="button__e4">Projets E4</button>
+                        <button class="projets__button" id="button__e5">Projets E5</button>
+                        <button class="projets__button" id="button__dev">Projets Développement</button>
+                        <button class="projets__button" id="button__doc">Documentation</button>
+                    </div>
+
+                    <input type="text" placeholder="Rechercher un projet" class="projets__search">
+                </div>
+
+                <div class="projets__container">
+
+                </div>
+
+            </section>
+
+            <div id="certificates-modal" class="modal">
+                <div class="modal-content">
+                    <img src="" alt="" class="modal__img">
+                </div>
+            </div>
+        
+        </div>
+
+        
+
+        
+        <!-- Modification du thème du portfolio --> 
+        <script src="js/theme.js"></script>
+
+        <!-- Intégration des certifications -->
+        <script src="js/projets.js"></script>
+    </body>
+</html>
